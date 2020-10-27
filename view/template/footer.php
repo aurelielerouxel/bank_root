@@ -17,7 +17,9 @@
   <script src="public/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="public/js/plugins.js"></script>
   <!-- <script src="js/main.js"></script> -->
-
+<?php 
+  echo $script;
+?>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

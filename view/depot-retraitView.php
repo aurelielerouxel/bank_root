@@ -11,6 +11,8 @@
     <div class="form-group col-md-4">
         <label for="account_id">Choisissez votre compte</label>
         <select class="form-control" id="account_id" name="account_id">
+        <?php ?>
+        <?php endforeach ?>
         </select>
     </div>
     <div class="form-group col-md-4">

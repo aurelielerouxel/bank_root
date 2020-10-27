@@ -34,7 +34,6 @@
             <th scope="col">Opération</th>
             <th scope="col">Montant</th>
             <th scope="col">Date</th>
-            <th scope="col">Balance</th>
           </tr>
         </thead>
         <tbody>
@@ -43,7 +42,6 @@
               <td><?php echo $account["operation_type"]; ?></td>
               <td><?php echo $account["operation_amount"];?></td>
               <td><?php echo $account["operation_date"]; ?></td>
-              <td><?php echo $account["account_balance"];?></td>
             </tr>
         </tbody>
       </table>

@@ -59,12 +59,11 @@ CREATE TABLE Operation
     account_id INT UNSIGNED,
     operation_amount DECIMAL(11,2) NOT NULL,
     operation_date TIMESTAMP NOT NULL,
-    account_balance INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (account_id) REFERENCES Account(id)
 )
 ENGINE=InnoDB;
-INSERT INTO Operation (operation_type, account_id, operation_amount, operation_date, account_balance)
-VALUES ('totol essence', 2, -65.25, NOW(), 3200.14),
-    ('paye octobre', 2, 2596.36, NOW(), 5796.5),
-    ('leclerc', 1, -40, NOW(), 1569.24);
+INSERT INTO Operation (operation_type, account_id, operation_amount, operation_date)
+VALUES ('totol essence', 2, -65.25, NOW()),
+    ('paye octobre', 2, 2596.36, NOW()),
+    ('leclerc', 1, -40, NOW());

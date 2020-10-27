@@ -4,7 +4,7 @@ httpRequest = new XMLHttpRequest();
 httpRequest.onreadystatechange = function() {
 
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
-         if (httpRequest.status === 200) {
+        if (httpRequest.status === 200) {
             //  Store the json file in a variable
             let array = JSON.parse(httpRequest.responseText);
 

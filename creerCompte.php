@@ -7,7 +7,8 @@
 
     if(!empty ($_POST) AND isset($_POST["fill_form"])) {
         $account = new Account($_POST);
-        newAccount($account);
+        $accountManager = new AccountManager();
+        $accountManager->newAccount($account);
         // var_dump($account);
     }
 
